@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang = "en">
     <link rel = "stylesheet" href="stylesheet.css">
+        <head> <!-- got rid of the div element as it was not really needed --> ->
+            <meta charset="UTF-8" />
+            <title> Jazsmin Gilliam  </title>  
+        </head>
 
-    <div>
-        <head>
-        <meta charset="UTF-8" />
-        <title> Welcome to the HomePage </title>
-        <div>
-            <nav>
-                <ul class= "navigation_bar">
-                    <li> <a href = "aboutme.html"> About Me &nbsp;</a> </li>
-                    <li> <a href = "portfolio.html"> Portfolio &nbsp;</a> </li>
-                    <li> <a href = "contact.html"> Contact Me &nbsp;</a> </li>
-
-                </ul>
-
-            </nav>
-        </div>
-            
-    </head>
-    </div>
-    
     <body>
-        <div>
-        <h1>Welcome to the Home Page!</h1>
+        <div class = "container">
+            <header>
+
+                <a href = "#" class = "logo">Jazsmin &nbsp; </a>
+                <nav>
+                    <a href = "index.html" > Home&nbsp; </a>
+                    <a href = "aboutme.html"> About Me&nbsp;</a>
+                    <a href = "portfolio.html" > Portfolio&nbsp;</a> 
+                    <a href = "#contact-me" > Contact Me&nbsp;</a> 
+                </nav>
+            </header>
         </div>
+
+
+        <div class="home-img">
+            <br>
+            <img src="SHS_JG2020-4.JPG" alt="">
+        </div>
+
+        <div class="home-content">
+            <h1>Hi, I'm <span>Jazsmin.</span> It's nice to Meet You!</h1>
+            <h2 class = "typing-text">I'm am a ... </h2>  
+           
+        </div>
+
+
+
+        <section id= "contact-me">
+            <h1> Connect with Me </h1>
+            <!-- Used the iconicons website to get the icons for mail, github, and LinkedIn 
+            Setup links for the appropriate icon and added two script tags (to make the icons work) near the end of the section tag
+            Could incorporate the ionic framework later... -->
+            <a target href="mailto:jlglliam@memphis.edu"> <ion-icon src="icons/mail-outline.svg"></ion-icon> </a>
+            <a href = "https://github.com/pokeanime" target = " _blank"> <ion-icon src="icons/logo-github.svg"></ion-icon> </a>
+            <a href = "https://www.linkedin.com/in/jasmine-gilliam222401a" target = "_blank"><ion-icon src="icons/logo-linkedin.svg"></ion-icon>  </a>
+           <!-- I may remove this link... <a href = "https://app.joinhandshake.com/profiles/27647915" target = "_blank"> HandShake </a> --> 
+        
+            <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
+        </section>
 
     </body>
 
