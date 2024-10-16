@@ -1,20 +1,117 @@
-a {
-    color: black;
-    text-decoration: none;
+*{                                  /* applies to all elements */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 1em;                /* adding a tiny shadow to all elements */
+    text-decoration: none; 
 
-}       /* Styles the links when first loading the pg; gets 
-            rid of the blue coloring and underline */
-
-a:visited {
-    color: rgb(154, 89, 170);
-
-}
-
-a:hover {
-    color:cadetblue;
-}
-
-body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: large;
+}
+
+html {
+    font-size: 65%;                 /* 65 is a bit big, we may want to decrease the size by 
+                                    like 15-25% maybe more */
+}
+
+body{
+    width: 100%;
+    height: 100%;                   /* setting the height to auto but may just change it to 100 ?? */
+    overflow-x: hidden;             /* hiding any content horizontally */
+    background-color: #494461;
+    color: #a8807e;
+
+}
+
+header{
+    position: fixed;                /*may change later to relative depending on how it looks */
+    top: 0;
+    left: 0;
+    width: 100%;  
+    padding: 1rem 9%; 
+    background-color: #494461;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;  
+}
+
+.logo{
+    font-size: 3.8rem;
+    color: #bfa5a3;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.95s ease;         /* make the animation for the logo a bit slower than the navigation bar */
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 2.1rem;              /* we want the font size to be responsive to add a bit of movement to the site */
+    color: #ca9c97;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 1s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, nav a:active{
+    font-size: 1.7rem; /* 1.8rem */
+    color: #a8807e;
+    border-bottom: 3px solid;
+}
+
+section.home{
+    padding-top: 7rem;
+    display: flex;
+    justify-content: space-between;     /* Spreading the content */
+    align-items: center;
+    flex-direction: row;                /* Make the text align horizontally w/ the image*/
+    min-height: 100vh;
+    background-color: #494461;
+    text-align: left;
+}
+
+.home-img {
+    width: 40%;                         /* Sizing the picture correctly*/
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 2rem;                 /* Sitting the space between the image and the text */
+}
+
+.home-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;                  /*makes sure the image is not distorted */
+    border-radius: 50%;
+    box-shadow: 0 0 25px;               /* reducing the shadow */
+    cursor: pointer;
+    transition: transform 0.8s ease;
+
+}
+
+.home-img img:hover{                    /* for the image when the user hovers */
+    transform: scale(1.3);              
+    transition: 1s ease;                /* make a growing animation when hovering */
+}
+
+.home-content {
+    width: 50%;                         /* Specifying the space for content */
+    text-align: left;
+}
+
+.home-content h1{
+    font-size: 6rem;                    /* Specifying the font of the h1 text in the body */
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+.home-content h2{
+    font-size: 4rem;                    /* Specifying the font of the h2 text in the body */
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
