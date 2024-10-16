@@ -100,7 +100,7 @@ section.home{
 
 .home-content {
     width: 50%;                         /* Specifying the space for content */
-    text-align: left;
+    text-align: right;
 }
 
 .home-content h1{
@@ -114,4 +114,21 @@ section.home{
     font-size: 4rem;                    /* Specifying the font of the h2 text in the body */
     margin-bottom: 1rem;
     font-weight: 700;
+}
+
+span{
+    color: #bfa5a3;                  /* This text is its on separate color */
+}
+
+#contact-me {                          /* The content with in the contact-me section */
+    text-align: center;
+}
+
+#contact-me h1{                        /* for the heading content */
+    font-size: 2.75rem;
+}
+
+ion-icon {                             /* name of the icons used */
+    font-size: 60px;                   /* fixed the size of the icons */
+    color: #ca9c97;                  /* fixed the icons to match the color scheme */
 }
